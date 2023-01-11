@@ -1,0 +1,14 @@
+server:
+  port: 80
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 869459864435-6rv3rd10a0imnjo8ai5pitjt78skm3r7.apps.googleusercontent.com
+            clientSecret: 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
+          github:
+            client-id: 9fb1dd651edc4982f896
+            client-secret: 1b563792e55418c10d87fca6cc0979dc2206c735
