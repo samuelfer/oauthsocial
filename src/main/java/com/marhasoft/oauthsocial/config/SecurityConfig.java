@@ -6,10 +6,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.security.web.util.matcher.RequestMatcher;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Configuration
 @EnableWebSecurity
@@ -18,9 +14,14 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
 
-        http.authorizeRequests(request ->
-            request
-                    .anyRequest().authenticated()).oauth2Login();
+        http.authorizeRequests().antMatchers("/login", "/resources/**", "/logout").permitAll()
+                    .anyRequest()
+                    .authenticated().and()
+                    .oauth2Login(oauth -> oauth.loginPage("/login"))
+                    .logout(logout -> logout.logoutRequestMatcher(
+                        new AntPathRequestMatcher("/logout"))
+                        .permitAll().logoutSuccessUrl("/login"));
+
         return http.build();
 
     }

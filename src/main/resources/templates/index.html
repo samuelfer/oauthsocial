@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +13,7 @@
 <div class="container">
     <h2 class="form-inline-heading">Login Oauth Social</h2>
     <div class="container">
-        <p>Você foi logado com sucesso</p>
+        <p><strong><span th:text="${name}"></span></strong> Você foi logado com sucesso</p>
     </div>
 </div>
 
