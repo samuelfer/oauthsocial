@@ -1,5 +1,5 @@
 # Oauthsocial
-Aplicação spring com login Oauth Social.
+### Aplicação spring com login Oauth Social.
 Nessa aplicação é feito o login utilizando o Google, GitHub e Facebook
 
 #### Para testar a aplicação com um dos provedores será necessário criar uma configuração no provedor no qual deseja realizar os testes
