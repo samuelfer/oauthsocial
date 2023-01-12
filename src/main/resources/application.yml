@@ -15,6 +15,16 @@ spring:
           facebook:
             clientId: ${FACEBOOK_CLIENT_ID}
             clientSecret: ${FACEBOOK_CLIENT_SECRET}
+#          custom-client:
+#            client-id:
+#            client-secret:
+#            redirect_uri:
+#            authorization-grant-type:
+#        provider:
+#          custom-client:
+#            token-uri:
+#            authorization-uri:
+
 
 #logging:
 #  level:

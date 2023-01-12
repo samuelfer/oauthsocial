@@ -13,6 +13,7 @@ public class SocialLoginOauth2Controller {
 
     @GetMapping("/")
     public String getIndex(Model model, @AuthenticationPrincipal OAuth2User principal) {
+        System.out.println("Chegando por aqui "+principal);
         model.addAttribute("name", principal.getAttribute("name"));
         return "index";
     }
