@@ -7,14 +7,14 @@ spring:
       client:
         registration:
           google:
-            clientId: 869459864435-6rv3rd10a0imnjo8ai5pitjt78skm3r7.apps.googleusercontent.com
-            clientSecret: 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
+            clientId: ${GOOGLE_CLIENT_ID}
+            clientSecret: ${GOOGLE_CLIENT_SECRET}
           github:
-            client-id: 9fb1dd651edc4982f896
-            client-secret: 1b563792e55418c10d87fca6cc0979dc2206c735
+            client-id: ${GITHUB_CLIENT_ID}
+            client-secret: ${GITHUB_CLIENT_SECRET}
           facebook:
-            clientId: 1527720111064820
-            clientSecret: 904f9ae7ebb3f91c760717ac725b65b7
+            clientId: ${FACEBOOK_CLIENT_ID}
+            clientSecret: ${FACEBOOK_CLIENT_SECRET}
 
 #logging:
 #  level:
