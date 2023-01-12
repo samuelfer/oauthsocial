@@ -7,5 +7,5 @@ Nessa aplicação é feito o login utilizando o Google, GitHub e Facebook
 2. **Github**=https://docs.github.com/pt/rest/apps/oauth-applications
 3. **Facebook**=https://developers.facebook.com/
 
-##### Exemplo das opções
+##### Exemplo de como é a tela das opções
 ![img.png](img.png)
